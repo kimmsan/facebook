@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "priority": 11,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Origin",
+          "operation": "set",
+          "value": "https://www.facebook.com"
+        },
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://www.facebook.com"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://www.facebook.com/*",
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 11,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Origin",
+          "operation": "set",
+          "value": "https://m.facebook.com"
+        },
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://m.facebook.com"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://m.facebook.com/*",
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 11,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Origin",
+          "operation": "set",
+          "value": "https://graph.facebook.com"
+        },
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://graph.facebook.com"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://graph.facebook.com/*",
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    }
+  }
+]

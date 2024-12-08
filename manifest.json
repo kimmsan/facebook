@@ -1,0 +1,45 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "icons/19.png",
+         "38": "icons/38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extName__"
+   },
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "host_permissions": [ "*://*.facebook.com/*" ],
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyUBu1djkwtANqbK7h8+oOKx/zLidiUGSLvctNZB0zcWjYHY3CQybXJEuORWj9O6nVbH0rkOB4+kOUOxLb7rwyqNBS3imQKkJQk0WoQUoOuPk1cZyPSS49+DDPHxASJlaJrW+49Ui+ASKoHNlIzQ0zaJHsW34ZDFMoxxQQgANIIexepCKhpwN8SFvYuS31iUEZc2JE7UfgXYlAnMQ7/qrb6zizNW40VHuz6cIEjSChl8RE1/XsS54hBh4FAJsJdWzYvwKL+/ENKMRkyekTADiGsK9ES/R5RVI/0ve/MCmmkmV6xjxYPpUcukvlaYy/oZFn8Zw0We+dGnAfg3nlt8+XQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "oauth2": {
+      "client_id": "798448043642-2vqiqdnk60t3ta3rb9ibmed9u77d82rc.apps.googleusercontent.com",
+      "scopes": [ "openid", "email", "profile" ]
+   },
+   "permissions": [ "storage", "identity", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.8",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "flkdkobpmfbeoljfhbllgihnpdegkkpp" ],
+      "resources": [ "assets/*" ]
+   } ]
+}
